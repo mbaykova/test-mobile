@@ -23,7 +23,9 @@ exports.config = {
         "deviceName": "IPhone (Aplana)",
         "platformVersion": "13.3",
         "udid": "f649838677d945dcc7b8856714aac703d1691d4b",
-        "app": "ru.russianpost.Russian-Post"
+        "app": "ru.russianpost.Russian-Post",
+        // "language" : "rus",
+
     }],
 
     reporters: [
