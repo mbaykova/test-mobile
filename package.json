@@ -22,7 +22,7 @@
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/register": "^7.11.5",
-    "@wdio/allure-reporter": "^6.8.1",
+    "mocha-allure-reporter": "^1.2.0",
     "chai": "^4.2.0"
   }
 }

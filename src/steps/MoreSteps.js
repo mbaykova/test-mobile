@@ -1,7 +1,7 @@
 import allureReporter from '@wdio/allure-reporter'
-import LoginPage from "../pages/app/LoginPage";
-import MorePage from "../pages/app/MorePage";
-import PostPage from "../pages/app/PostPage";
+import LoginPage from "../pages/ios/app/LoginPage";
+import MorePage from "../pages/ios/app/MorePage";
+import PostPage from "../pages/ios/app/PostPage";
 
 class MoreSteps {
 

@@ -1,7 +1,7 @@
 import allureReporter from '@wdio/allure-reporter'
-import AboutAppPage from "../pages/app/AboutAppPage";
-import AgreementPage from "../pages/browser/AgreementPage";
-import SearchResultPage from "../pages/app/SearchResultPage";
+import AboutAppPage from "../pages/ios/app/AboutAppPage";
+import AgreementPage from "../pages/ios/browser/AgreementPage";
+import SearchResultPage from "../pages/ios/app/SearchResultPage";
 
 class AboutAppSteps {
 

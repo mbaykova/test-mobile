@@ -1,4 +1,4 @@
-import ProfilePage from "../pages/app/ProfilePage";
+import ProfilePage from "../pages/ios/app/ProfilePage";
 
 class ProfileSteps {
 

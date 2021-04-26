@@ -1,5 +1,5 @@
 import allureReporter from '@wdio/allure-reporter'
-import SearchResultPage from "../pages/app/SearchResultPage";
+import SearchResultPage from "../pages/ios/app/SearchResultPage";
 
 class SearchResultSteps {
 

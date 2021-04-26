@@ -1,5 +1,5 @@
 import allureReporter from '@wdio/allure-reporter'
-import PostPage from "../pages/app/PostPage";
+import PostPage from "../pages/ios/app/PostPage";
 
 class PostSteps {
 
