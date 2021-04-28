@@ -15,19 +15,6 @@ exports.config = {
     },
     maxInstances: 1,
     sync: true,
-    specs: [
-        './src/tests/LoginTest.js'
-    ],
-    capabilities : [{
-        "platformName": "iOS",
-        "deviceName": "IPhone (Aplana)",
-        "platformVersion": "13.3",
-        "udid": "f649838677d945dcc7b8856714aac703d1691d4b",
-        "app": "ru.russianpost.Russian-Post",
-         "language" : "ru",
-
-    }],
-
     reporters: [
         ['allure', {
             outputDir: 'allure-results',

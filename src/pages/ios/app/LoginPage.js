@@ -2,7 +2,7 @@ import MenuPage from "./MenuPage";
 
 const usernameSelector = '//XCUIElementTypeStaticText[@name="Мобильный телефон/Email"]/../XCUIElementTypeTextField'
 const passwordSelector = 'type == "XCUIElementTypeSecureTextField"'
-const submitSelector = 'label == "Войти1"'
+const submitSelector = 'label == "Войти"'
 
 class LoginPage extends MenuPage{
 
