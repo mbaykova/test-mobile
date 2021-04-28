@@ -1,11 +1,11 @@
 import allureReporter from '@wdio/allure-reporter'
-import LoginSteps from "../steps/LoginSteps";
-import MoreSteps from "../steps/MoreSteps";
-import PostSteps from "../steps/PostSteps";
-import ProfileSteps from "../steps/ProfileSteps";
-import AboutAppSteps from "../steps/AboutAppSteps";
-import BrowserSteps from "../steps/BrowserSteps";
-import SearchResultSteps from "../steps/SearchResultSteps";
+import LoginSteps from "../../steps/LoginSteps";
+import MoreSteps from "../../steps/MoreSteps";
+import PostSteps from "../../steps/PostSteps";
+import ProfileSteps from "../../steps/ProfileSteps";
+import AboutAppSteps from "../../steps/AboutAppSteps";
+import BrowserSteps from "../../steps/BrowserSteps";
+import SearchResultSteps from "../../steps/SearchResultSteps";
 
 
 describe('iOS', function () {
