@@ -1,12 +1,10 @@
-import allureReporter from '@wdio/allure-reporter'
 import LoginSteps from "../../steps/android/LoginSteps";
-import NewPostPage from "../../pages/android/NewPostPage"
 import PostSteps from "../../steps/android/PostSteps";
 
 describe('Android', function () {
 
-    const login = "mobile_test43210"
-    const password = "test123456"
+    const login = "mobiletest43210"
+    const password = "test654321"
 
     it('Добавление нового поста с использованием камеры', function () {
              LoginSteps.login(login, password)

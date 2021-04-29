@@ -1,25 +1,23 @@
-import allureReporter from '@wdio/allure-reporter'
 import LoginSteps from "../../steps/android/LoginSteps";
-import NewPostPage from "../../pages/android/NewPostPage"
 import PostSteps from "../../steps/android/PostSteps";
 
 describe('Android', function () {
 
-    const login = "mobile_test43210"
-    const password = "test123456"
+    const login = "mobiletest43210"
+    const password = "test654321"
     const fileName = "test-photo.png"
+    const pushFileName = "test-photo" + new Date().getTime() + ".png"
 
     it('Добавление нового поста - фото из галереи', function () {
-          PostSteps.addPhotoToDevice(fileName)
-          PostSteps.getFileFromDevice()
+         PostSteps.addPhotoToDevice(fileName, pushFileName)
          LoginSteps.login(login, password)
+         PostSteps.getFileFromDevice()
          PostSteps.addNewPostFromGallery()
          PostSteps.checkPostExist()
     });
 
     afterEach(function () {
-         console.log("after each - Добавление нового поста - фото из галереи")
-        PostSteps.deleteFileFromDevice(fileName)
+         PostSteps.deleteFileFromDevice(pushFileName)
 
     });
 

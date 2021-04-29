@@ -1,11 +1,11 @@
 import allureReporter from '@wdio/allure-reporter'
-import LoginSteps from "../../steps/LoginSteps";
-import MoreSteps from "../../steps/MoreSteps";
-import PostSteps from "../../steps/PostSteps";
-import ProfileSteps from "../../steps/ProfileSteps";
-import AboutAppSteps from "../../steps/AboutAppSteps";
-import BrowserSteps from "../../steps/BrowserSteps";
-import SearchResultSteps from "../../steps/SearchResultSteps";
+import LoginSteps from "../../steps/ios/LoginSteps";
+import MoreSteps from "../../steps/ios/MoreSteps";
+import PostSteps from "../../steps/ios/PostSteps";
+import ProfileSteps from "../../steps/ios/ProfileSteps";
+import AboutAppSteps from "../../steps/ios/AboutAppSteps";
+import BrowserSteps from "../../steps/ios/BrowserSteps";
+import SearchResultSteps from "../../steps/ios/SearchResultSteps";
 
 
 describe('iOS', function () {
@@ -23,7 +23,7 @@ describe('iOS', function () {
     it ('Поиск отправления', function (){
         LoginSteps.login(login, password)
         PostSteps.search(searchNumber)
-        SearchResultSteps.checkTitle(searchNumber)
+        SearchResultSteps.checkResultSearch(searchNumber)
         SearchResultSteps.existInfoAboutTrackItem()
         SearchResultSteps.existRenameButton()
     });
@@ -44,7 +44,6 @@ describe('iOS', function () {
             MoreSteps.goToMenuItem("Мой профиль")
             ProfileSteps.exit()
         }
-
     });
 
 });
